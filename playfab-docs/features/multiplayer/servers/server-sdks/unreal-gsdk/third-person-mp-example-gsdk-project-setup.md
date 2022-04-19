@@ -215,9 +215,9 @@ Then locate your Init() function. If you _**don't**_ have an Init() function yet
 void U[YourGameInstanceClassName]::Init()
 {
     FOnGSDKShutdown_Dyn OnGSDKShutdown;
-    OnGSDKShutdown.BindDynamic(this, &UMyGameInstance::OnGSDKShutdown);
+    OnGSDKShutdown.BindDynamic(this, &UThirdPersonGameInstance::OnGSDKShutdown);
     FOnGSDKHealthCheck_Dyn OnGSDKHealthCheck;
-    OnGSDKHealthCheck.BindDynamic(this, &UMyGameInstance::OnGSDKHealthCheck);
+    OnGSDKHealthCheck.BindDynamic(this, &UThirdPersonGameInstance::OnGSDKHealthCheck);
     FOnGSDKServerActive_Dyn OnGSDKServerActive;
     OnGSDKServerActive.BindDynamic(this, &UThirdPersonGameInstance::OnGSDKServerActive);
     FOnGSDKReadyForPlayers_Dyn OnGSDKReadyForPlayers;
